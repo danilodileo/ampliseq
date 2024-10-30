@@ -1,0 +1,63 @@
+Oct-30 10:48:11.639 [main] INFO  com.askimed.nf.test.App - nf-test 0.8.4
+Oct-30 10:48:11.665 [main] INFO  com.askimed.nf.test.App - Arguments: [test, tests/pipeline/test.nf.test, --profile, singularity]
+Oct-30 10:48:13.402 [main] INFO  com.askimed.nf.test.App - Nextflow Version: 24.04.4
+Oct-30 10:48:13.406 [main] INFO  com.askimed.nf.test.commands.RunTestsCommand - Load config from file /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/nf-test.config...
+Oct-30 10:48:13.981 [main] INFO  com.askimed.nf.test.commands.RunTestsCommand - Detected 1 test files.
+Oct-30 10:48:14.536 [main] INFO  com.askimed.nf.test.config.FileStaging - Copy directory '/crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/bin' to '/crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/.nf-test/tests/876a8d88c9fe4f4b76dd9de3cf231026/meta/bin'
+Oct-30 10:48:14.772 [main] WARN  com.askimed.nf.test.config.FileStaging - File '/crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/lib' not found. Ignore it.
+Oct-30 10:48:14.773 [main] INFO  com.askimed.nf.test.config.FileStaging - Copy directory '/crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/assets' to '/crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/.nf-test/tests/876a8d88c9fe4f4b76dd9de3cf231026/meta/assets'
+Oct-30 10:48:14.859 [main] DEBUG com.askimed.nf.test.core.AbstractTest - Stage 0 user provided files...
+Oct-30 10:48:14.869 [main] INFO  com.askimed.nf.test.core.TestExecutionEngine - Started test plan
+Oct-30 10:48:14.869 [main] INFO  com.askimed.nf.test.core.TestExecutionEngine - Running testsuite 'Test Workflow main.nf' from file '/crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/tests/pipeline/test.nf.test'.
+Oct-30 10:48:14.870 [main] INFO  com.askimed.nf.test.core.TestExecutionEngine - Run test '876a8d88: Paired-End'. type: com.askimed.nf.test.lang.pipeline.PipelineTest
+Oct-30 10:48:39.941 [main] DEBUG com.askimed.nf.test.lang.extensions.SnapshotFile - Load snapshots from file '/crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/tests/pipeline/test.nf.test.snap'
+Oct-30 10:48:39.945 [main] DEBUG com.askimed.nf.test.lang.extensions.Snapshot - Snapshots 'overall_summary_tsv' do not match.
+Oct-30 10:48:39.954 [main] DEBUG com.askimed.nf.test.lang.extensions.Snapshot - Snapshots 'barrnap' do not match.
+Oct-30 10:48:39.956 [main] DEBUG com.askimed.nf.test.lang.extensions.Snapshot - Snapshots 'cutadapt' do not match.
+Oct-30 10:48:39.961 [main] DEBUG com.askimed.nf.test.lang.extensions.Snapshot - Snapshots 'dada2' do not match.
+Oct-30 10:48:39.968 [main] DEBUG com.askimed.nf.test.lang.extensions.Snapshot - Snapshots 'input' do not match.
+Oct-30 10:48:39.969 [main] DEBUG com.askimed.nf.test.lang.extensions.Snapshot - Snapshots 'multiqc' do not match.
+Oct-30 10:48:39.991 [main] DEBUG com.askimed.nf.test.lang.extensions.Snapshot - Snapshots 'SBDI' do not match.
+Oct-30 10:48:39.995 [main] DEBUG com.askimed.nf.test.lang.extensions.Snapshot - Snapshots 'vsearch_cluster' do not match.
+Oct-30 10:48:40.003 [main] INFO  com.askimed.nf.test.core.TestExecutionEngine - Test '876a8d88: Paired-End' finished. status: FAILED
+org.codehaus.groovy.runtime.powerassert.PowerAssertionError: 72 of 72 assertions failed
+	at com.askimed.nf.test.lang.extensions.GlobalMethods.assertAll(GlobalMethods.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite.invoke(StaticMetaMethodSite.java:44)
+	at org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite.callStatic(StaticMetaMethodSite.java:100)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:55)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:217)
+	at test_nf$_run_closure1$_closure2$_closure4.doCall(test.nf.test:17)
+	at test_nf$_run_closure1$_closure2$_closure4.doCall(test.nf.test)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:274)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1030)
+	at groovy.lang.Closure.call(Closure.java:427)
+	at groovy.lang.Closure.call(Closure.java:406)
+	at com.askimed.nf.test.lang.TestCode.execute(TestCode.java:16)
+	at com.askimed.nf.test.lang.pipeline.PipelineTest.execute(PipelineTest.java:135)
+	at com.askimed.nf.test.core.TestExecutionEngine.execute(TestExecutionEngine.java:214)
+	at com.askimed.nf.test.commands.RunTestsCommand.execute(RunTestsCommand.java:184)
+	at com.askimed.nf.test.commands.AbstractCommand.call(AbstractCommand.java:43)
+	at com.askimed.nf.test.commands.AbstractCommand.call(AbstractCommand.java:18)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:1953)
+	at picocli.CommandLine.access$1300(CommandLine.java:145)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2352)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2346)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2311)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2179)
+	at picocli.CommandLine.execute(CommandLine.java:2078)
+	at com.askimed.nf.test.App.run(App.java:44)
+	at com.askimed.nf.test.App.main(App.java:51)
+Oct-30 10:48:40.013 [main] INFO  com.askimed.nf.test.core.TestExecutionEngine - Testsuite 'Test Workflow main.nf' finished. snapshot file: true, skipped tests: false, failed tests: true
+Oct-30 10:48:40.014 [main] INFO  com.askimed.nf.test.core.TestExecutionEngine - Executed 1 tests. 1 tests failed. Done!

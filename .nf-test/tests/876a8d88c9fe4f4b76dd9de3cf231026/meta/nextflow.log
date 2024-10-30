@@ -1,0 +1,304 @@
+Oct-30 10:48:17.056 [main] DEBUG nextflow.cli.Launcher - $> nextflow -quiet -log /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/.nf-test/tests/876a8d88c9fe4f4b76dd9de3cf231026/meta/nextflow.log run /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/main.nf -c /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/nextflow.config -c /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/nextflow.config -params-file /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/.nf-test/tests/876a8d88c9fe4f4b76dd9de3cf231026/meta/params.json -ansi-log false -profile singularity -with-trace /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/.nf-test/tests/876a8d88c9fe4f4b76dd9de3cf231026/meta/trace.csv -w /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/.nf-test/tests/876a8d88c9fe4f4b76dd9de3cf231026/work
+Oct-30 10:48:17.166 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.04.4
+Oct-30 10:48:17.202 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/danil/.nextflow/plugins; core-plugins: nf-amazon@2.5.3,nf-azure@1.6.1,nf-cloudcache@0.4.1,nf-codecommit@0.2.1,nf-console@1.1.3,nf-ga4gh@1.3.0,nf-google@1.13.2-patch1,nf-tower@1.9.1,nf-wave@1.4.2-patch1
+Oct-30 10:48:17.221 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Oct-30 10:48:17.222 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Oct-30 10:48:17.228 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Oct-30 10:48:17.247 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Oct-30 10:48:17.281 [main] DEBUG nextflow.config.ConfigBuilder - Found config base: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/nextflow.config
+Oct-30 10:48:17.287 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/nextflow.config
+Oct-30 10:48:17.287 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/nextflow.config
+Oct-30 10:48:17.290 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/nextflow.config
+Oct-30 10:48:17.291 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/nextflow.config
+Oct-30 10:48:17.292 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/nextflow.config
+Oct-30 10:48:17.332 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/danil/.nextflow/secrets/store.json
+Oct-30 10:48:17.336 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@2d2acd89] - activable => nextflow.secret.LocalSecretsProvider@2d2acd89
+Oct-30 10:48:17.366 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `singularity`
+Oct-30 10:48:20.692 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `singularity`
+Oct-30 10:48:21.756 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `singularity`
+Oct-30 10:48:22.607 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [bih, cfc_dev, uzl_omics, ifb_core, embl_hd, denbi_qbic, test_doubleprimers, alice, mjolnir_globe, uppmax, giga, test_pacbio_its, incliva, ilifu, uge, rosalind_uge, lugh, mccleary, unibe_ibu, vai, czbiohub_aws, jax, roslin, ccga_med, tes, scw, unc_longleaf, test_sintax, tigem, tubingen_apg, google, test_qiimecustom, apollo, ipop_up, vsc_calcua, test_fasta, pdc_kth, googlels, ceci_nic5, stjude, daisybio, test_iontorrent, eddie, medair, biowulf, apptainer, bi, bigpurple, adcra, test_novaseq, cedars, pawsey_setonix, vsc_kul_uhasselt, pawsey_nimbus, ucl_myriad, utd_ganymede, charliecloud, test_multi, icr_davros, ceres, arm, munin, rosalind, hasta, cfc, uzh, test_multiregion, shu_bmrc, ebi_codon_slurm, ebc, ccga_dx, crick, ku_sund_danhead, marvin, shifter, biohpc_gen, test_its_dada_taxonomy, mana, mamba, york_viking, unc_lccc, wehi, awsbatch, wustl_htcf, arcc, ceci_dragon2, imperial, maestro, software_license, genotoul, nci_gadi, abims, janelia, nu_genomics, googlebatch, oist, sahmri, test_reftaxcustom, mpcdf, leicester, vsc_ugent, create, sage, cambridge, test_single, jex, podman, ebi_codon, cheaha, xanadu, nyu_hpc, test, marjorie, test_pplace, test_pplace_hmmsearch, computerome, ucd_sonic, seg_globe, sanger, dkfz, bluebear, pasteur, einstein, ethz_euler, m3c, test_full, imb, ucl_cscluster, tuos_stanage, azurebatch, hki, crukmi, csiro_petrichor, qmul_apocrita, wave, docker, engaging, gis, hypatia, psmn, eva, nygc, fgcz, conda, crg, singularity, mpcdf_viper, pe2, self_hosted_runner, tufts, uw_hyak_pedslabs, debug, genouest, cbe, test_failed, gitpod, phoenix, seawulf, uod_hpc, fub_curta, uct_hpc, aws_tower, binac]
+Oct-30 10:48:22.692 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Oct-30 10:48:22.712 [main] INFO  nextflow.cli.CmdRun - Launching `/crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/main.nf` [trusting_swartz] DSL2 - revision: bf04a499cc
+Oct-30 10:48:22.713 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins declared=[nf-schema@2.1.2]
+Oct-30 10:48:22.714 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Oct-30 10:48:22.714 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[nf-schema@2.1.2]
+Oct-30 10:48:22.714 [main] DEBUG nextflow.plugin.PluginUpdater - Installing plugin nf-schema version: 2.1.2
+Oct-30 10:48:22.724 [main] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-schema@2.1.2' resolved
+Oct-30 10:48:22.724 [main] INFO  org.pf4j.AbstractPluginManager - Start plugin 'nf-schema@2.1.2'
+Oct-30 10:48:22.733 [main] DEBUG nextflow.plugin.BasePlugin - Plugin started nf-schema@2.1.2
+Oct-30 10:48:22.805 [main] DEBUG nextflow.Session - Session UUID: d58199c0-3c69-4e93-80a5-f493f2b4cc78
+Oct-30 10:48:22.806 [main] DEBUG nextflow.Session - Run name: trusting_swartz
+Oct-30 10:48:22.806 [main] DEBUG nextflow.Session - Executor pool size: 20
+Oct-30 10:48:22.818 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Oct-30 10:48:22.824 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=60; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Oct-30 10:48:22.854 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.04.4 build 5917
+  Created: 01-08-2024 07:05 UTC (09:05 CEST)
+  System: Linux 3.10.0-1160.119.1.el7.x86_64
+  Runtime: Groovy 4.0.21 on OpenJDK 64-Bit Server VM 11.0.13+7-b1751.21
+  Encoding: UTF-8 (UTF-8)
+  Process: 26945@r149.uppmax.uu.se [172.18.9.149]
+  CPUs: 20 - Mem: 122.5 GB (121 GB) - Swap: 6 GB (6 GB)
+Oct-30 10:48:22.911 [main] DEBUG nextflow.Session - Work-dir: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/.nf-test/tests/876a8d88c9fe4f4b76dd9de3cf231026/work [lustre]
+Oct-30 10:48:22.972 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Oct-30 10:48:22.985 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Oct-30 10:48:23.082 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Oct-30 10:48:23.100 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 21; maxThreads: 1000
+Oct-30 10:48:23.324 [main] DEBUG nextflow.Session - Session start
+Oct-30 10:48:23.329 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow started -- trace file: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/.nf-test/tests/876a8d88c9fe4f4b76dd9de3cf231026/meta/trace.csv
+Oct-30 10:48:23.592 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Oct-30 10:48:25.699 [main] WARN  nextflow.Nextflow - No DADA2 cutoffs were specified (`--trunclenf` & `--trunclenr`), therefore reads will be truncated where median quality drops below 25 (defined by `--trunc_qmin`) but at least a fraction of 0.75 (defined by `--trunc_rmin`) of the reads will be retained.
+The chosen cutoffs do not account for required overlap for merging, therefore DADA2 might have poor merging efficiency or even fail.
+
+Oct-30 10:48:34.888 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryLog:paramsSummaryLog]; plugin Id: nf-schema
+Oct-30 10:48:34.941 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [validateParameters:validateParameters]; plugin Id: nf-schema
+Oct-30 10:48:34.944 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryMap:paramsSummaryMap]; plugin Id: nf-schema
+Oct-30 10:48:34.945 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [samplesheetToList:samplesheetToList]; plugin Id: nf-schema
+Oct-30 10:48:37.996 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [samplesheetToList:samplesheetToList]; plugin Id: nf-schema
+Oct-30 10:48:37.998 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryMap:paramsSummaryMap]; plugin Id: nf-schema
+Oct-30 10:48:38.559 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryLog:paramsSummaryLog]; plugin Id: nf-schema
+Oct-30 10:48:38.560 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [validateParameters:validateParameters]; plugin Id: nf-schema
+Oct-30 10:48:38.563 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryMap:paramsSummaryMap]; plugin Id: nf-schema
+Oct-30 10:48:38.564 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [samplesheetToList:samplesheetToList]; plugin Id: nf-schema
+Oct-30 10:48:38.884 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryLog:paramsSummaryLog]; plugin Id: nf-schema
+Oct-30 10:48:38.885 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [validateParameters:validateParameters]; plugin Id: nf-schema
+Oct-30 10:48:38.887 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryMap:paramsSummaryMap]; plugin Id: nf-schema
+Oct-30 10:48:38.888 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [samplesheetToList:samplesheetToList]; plugin Id: nf-schema
+Oct-30 10:48:39.141 [main] INFO  nextflow.Nextflow - 
+-[2m----------------------------------------------------[0m-
+                                        [0;32m,--.[0;30m/[0;32m,-.[0m
+[0;34m        ___     __   __   __   ___     [0;32m/,-._.--~'[0m
+[0;34m  |\ | |__  __ /  ` /  \ |__) |__         [0;33m}  {[0m
+[0;34m  | \| |       \__, \__/ |  \ |___     [0;32m\`-._,-`-,[0m
+                                        [0;32m`._,._,'[0m
+[0;35m  nf-core/ampliseq 2.12.0dev[0m
+-[2m----------------------------------------------------[0m-
+[1mMain arguments[0m
+  [0;34moutdir         : [0;32m/crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/.nf-test/tests/876a8d88c9fe4f4b76dd9de3cf231026/output[0m
+
+[1mCore Nextflow options[0m
+  [0;34mrunName        : [0;32mtrusting_swartz[0m
+  [0;34mcontainerEngine: [0;32msingularity[0m
+  [0;34mlaunchDir      : [0;32m/crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/.nf-test/tests/876a8d88c9fe4f4b76dd9de3cf231026[0m
+  [0;34mworkDir        : [0;32m/crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/.nf-test/tests/876a8d88c9fe4f4b76dd9de3cf231026/work[0m
+  [0;34mprojectDir     : [0;32m/crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq[0m
+  [0;34muserName       : [0;32mdanil[0m
+  [0;34mprofile        : [0;32msingularity[0m
+  [0;34mconfigFiles    : [0;32m[0m
+
+!! Only displaying parameters that differ from the pipeline defaults !!
+-[2m----------------------------------------------------[0m-* The pipeline
+  https://doi.org/10.5281/zenodo.1493841
+  https://doi.org/10.3389/fmicb.2020.550420
+
+* The nf-core framework
+    https://doi.org/10.1038/s41587-020-0439-x
+
+* Software dependencies
+    https://github.com/nf-core/ampliseq/blob/master/CITATIONS.md
+
+Oct-30 10:48:39.143 [main] DEBUG nextflow.validation.SchemaValidator - Starting parameters validation
+Oct-30 10:48:39.231 [main] WARN  nextflow.validation.SchemaValidator - The following invalid input values have been detected:
+
+* --pplace_sheet: null
+
+
+Oct-30 10:48:39.490 [main] DEBUG nextflow.validation.SchemaValidator - Finishing parameters validation
+Oct-30 10:48:39.509 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_99481774c13d9aeb: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../modules/local/dada2_denoising.nf
+  Script_55c9e1bb3fccb784: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/qiime2_extract.nf
+  Script_90f6d581541b4fd7: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/sidle_seqrecon.nf
+  Script_f1a7b5136d3a5deb: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/nf-core/fasta_newick_epang_gappa/../../../modules/nf-core/gappa/examinegraft/main.nf
+  Script_f289bdfe26d7f1cf: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../modules/nf-core/fastqc/main.nf
+  Script_8d6e3326db3d9a13: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/nf-core/fasta_newick_epang_gappa/../../../modules/nf-core/gappa/examineassign/main.nf
+  Script_36a52a13b215bb20: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/nf-core/fasta_newick_epang_gappa/../../../modules/nf-core/epang/place/main.nf
+  Script_21f45535e68e9591: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/parse_input.nf
+  Script_1ca195df20024253: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/sidle_treerecon.nf
+  Script_42447513ede49365: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/sidle_indbaligned.nf
+  Script_4955288afd8ca61e: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../modules/nf-core/multiqc/main.nf
+  Script_9a7ddd92b14d6a45: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../modules/local/filter_len.nf
+  Script_6fbcf8477f9d7d4c: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/nf-core/utils_nfcore_pipeline/main.nf
+  Script_a905a6ee23f4721e: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../modules/local/sbdiexport.nf
+  Script_0cff471a1f7e36e7: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../modules/local/dada2_stats.nf
+  Script_569f02526d6d49eb: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/cutadapt_workflow.nf
+  Script_0e4e3952b8aab3db: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../modules/local/metadata_pairwise.nf
+  Script_a1043e4dd7c2a038: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/nf-core/kraken2/kraken2/main.nf
+  Script_d1832e11b9029ac2: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/format_taxresults_sintax.nf
+  Script_daa3c1762a49a290: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/phyloseq_workflow.nf
+  Script_bc377a5eab4d07dc: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/sidle_indb.nf
+  Script_fd346d4733ba514c: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/qiime2_featuretable_group.nf
+  Script_417c08a3efda3115: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/qiime2_tree.nf
+  Script_7ca044612585a3ee: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/sidle_taxrecon.nf
+  Script_5a7a67a92ad637b6: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../modules/local/filter_stats.nf
+  Script_a580e4f1dd855151: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../modules/local/merge_stats.nf
+  Script_8a63379aa5b62352: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/qiime2_classify.nf
+  Script_8b1e45229c46175c: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/qiime2_diversity.nf
+  Script_7d6dde484d205a2d: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/qiime2_taxonomy.nf
+  Script_62a38cb1cb9ccd74: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/qiime2_export_absolute.nf
+  Script_ae20b6a01f696302: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/sidle_dbextract.nf
+  Script_0ce72e734ad77725: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./subworkflows/local/utils_nfcore_ampliseq_pipeline/../../nf-core/utils_nextflow_pipeline/main.nf
+  Script_bd449ab9b1ea529b: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/phyloseq.nf
+  Script_90a4b98500ee135d: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/qiime2_ancom_tax.nf
+  Script_601806ab66c19f62: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/format_taxonomy_qiime.nf
+  Script_746e118874a1cd9f: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/sidle_trim.nf
+  Script_16ef001ff5d07562: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../modules/local/dada2_rmchimera.nf
+  Script_c410879273395524: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/nf-core/fasta_newick_epang_gappa/../../../modules/nf-core/hmmer/hmmbuild/main.nf
+  Script_dde2f156d0602fdd: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../modules/local/qiime2_tablefiltertaxa.nf
+  Script_5907ea1d27d70511: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/qiime2_train.nf
+  Script_e644fb6da94d4bab: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/nf-core/untar/main.nf
+  Script_a8d8dd8dd41d074f: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/main.nf
+  Script_995a7cb3ac639633: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/nf-core/fasta_newick_epang_gappa/../../../modules/nf-core/hmmer/eslalimask/main.nf
+  Script_4068d0a3b5f17a23: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/dada2_filtntrim.nf
+  Script_37dd05118c905307: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/nf-core/cutadapt/main.nf
+  Script_3f06e6c7c5e7198f: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/nf-core/fasta_newick_epang_gappa/../../../modules/nf-core/epang/split/main.nf
+  Script_4e7b002b5885eea9: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/phyloseq_inasv.nf
+  Script_80c31cb1ff3bd881: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/combine_table.nf
+  Script_d2c3aa9d408cd884: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../modules/local/dada2_merge.nf
+  Script_c83a536e5ec8de8d: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/assignsh.nf
+  Script_042518d1a5640704: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../modules/local/rename_raw_data_files.nf
+  Script_551db35f7a71c2c5: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/nf-core/vsearch/usearchglobal/main.nf
+  Script_77090ceba634ea38: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../modules/local/itsx_cutasv.nf
+  Script_7325837df6d21313: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/sidle_dbrecon.nf
+  Script_f2f280fbe822b7b3: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/format_taxonomy_sidle.nf
+  Script_a2bc5c2c038216c2: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/sidle_dbfilt.nf
+  Script_f9df62d5ad0ac7f2: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/sidle_filttax.nf
+  Script_094ba5b310a8fedf: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/utils_nfcore_ampliseq_pipeline/main.nf
+  Script_28db566cd9059922: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/nf-core/fasta_hmmsearch_rank_fastas/../../../modules/nf-core/seqtk/subseq/main.nf
+  Script_932f66561db28708: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../modules/local/format_pplacetax.nf
+  Script_0f878a4a86eaed38: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/qiime2_diversity_beta.nf
+  Script_47c786cf43a64627: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/kraken2_taxonomy_wf.nf
+  Script_b898e4d412a95805: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../modules/local/barrnapsummary.nf
+  Script_2729cc7527098759: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../modules/local/metadata_all.nf
+  Script_ecde45584081a12d: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/format_taxresults.nf
+  Script_48e4afc7fa89795f: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../modules/local/dada2_splitregions.nf
+  Script_dce39c57d746e873: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/dada2_taxonomy.nf
+  Script_0eb3912402269429: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../modules/local/format_fastainput.nf
+  Script_7934d6fe061ca221: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../modules/local/hmmextract.nf
+  Script_77977f62e8918a77: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../modules/local/qiime2_intree.nf
+  Script_8eb57d93e443a72c: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/ampliseq.nf
+  Script_df54fe6a0a83a45d: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/nf-core/fasta_newick_epang_gappa/../../../modules/nf-core/hmmer/hmmalign/main.nf
+  Script_3e1b64ac681f83ec: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../modules/nf-core/vsearch/cluster/main.nf
+  Script_2538333b06911a18: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/qiime2_barplotavg.nf
+  Script_152e9906f4dc5cef: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/dada2_quality.nf
+  Script_e52161bff337a6be: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/qiime2_ancombc_tax.nf
+  Script_71c72f0b984e30b2: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/qiime2_diversity_betaord.nf
+  Script_c31751ec1b896950: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/cutadapt_summary_merge.nf
+  Script_b38e64fa6ceafd7f: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../modules/local/filter_clusters.nf
+  Script_891440a68088119a: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/nf-core/vsearch/sintax/main.nf
+  Script_8936e669b2ef2213: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../modules/local/qiime2_seqfiltertable.nf
+  Script_dfc9986abf5c42c1: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/qiime2_export_reltax.nf
+  Script_f0051164a3c606a5: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/dada2_taxonomy_wf.nf
+  Script_656bb79ae7dc5dd0: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/qiime2_ancom_asv.nf
+  Script_5379148f9afa3d4f: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/sintax_taxonomy_wf.nf
+  Script_bc8ba8b1ae5505db: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/qiime2_diversity_adonis.nf
+  Script_c9fc09f855ff8086: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/nf-core/fasta_newick_epang_gappa/../../../modules/nf-core/mafft/main.nf
+  Script_3c1d4f49752899c0: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../modules/local/phyloseq_intax.nf
+  Script_1055903c13160407: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/sidle_wf.nf
+  Script_cc3922f216d60538: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../modules/local/filter_codons.nf
+  Script_daf15d4dcf58301b: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../modules/local/qiime2_intax.nf
+  Script_5c6b7a4674b37e42: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/qiime2_export_relasv.nf
+  Script_6f8ff749f0866f00: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../modules/local/novaseq_err.nf
+  Script_4eed20cd24035285: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../modules/local/filter_ssu.nf
+  Script_755923d8f4af9c97: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/nf-core/fasta_hmmsearch_rank_fastas/main.nf
+  Script_cd515528f6089023: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/qiime2_preptax.nf
+  Script_68291a26eaaeed4d: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../modules/local/format_taxonomy.nf
+  Script_749a41f83d8c7921: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/qiime2_barplot.nf
+  Script_f4d9073e92ea9baf: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/nf-core/fasta_newick_epang_gappa/main.nf
+  Script_b4f46c577a80128e: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../modules/local/barrnap.nf
+  Script_215a636da7ab24a2: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/utils_nfcore_ampliseq_pipeline/../../nf-core/utils_nfschema_plugin/main.nf
+  Script_991aa06870337525: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../modules/local/picrust.nf
+  Script_7780b14094823a21: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/nf-core/fasta_newick_epang_gappa/../../../modules/nf-core/hmmer/eslreformat/main.nf
+  Script_e7aea716964b5096: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/qiime2_export.nf
+  Script_11d1d725eceddc4e: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../modules/local/qiime2_inseq.nf
+  Script_323a05875ca0e144: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/dada2_preprocessing.nf
+  Script_2dea1cb9802c1091: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/dada2_addspecies.nf
+  Script_3412a3d86d51e8f0: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/sidle_align.nf
+  Script_de0574a490c24f02: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/format_taxonomy_sintax.nf
+  Script_5e7003a9b5f06c92: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/qiime2_diversity_core.nf
+  Script_10b347658d044afc: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/cutadapt_summary.nf
+  Script_bccdacc34e930bc6: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/nf-core/fasta_hmmsearch_rank_fastas/../../../modules/nf-core/hmmer/hmmsearch/main.nf
+  Script_685ab1e6b263cd07: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../modules/local/sbdiexportreannotate.nf
+  Script_3f1cc491c25fbe1b: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/format_taxresults_kraken2.nf
+  Script_e67541561a418848: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/trunclen.nf
+  Script_da6fe42db12cdb4b: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/sidle_in.nf
+  Script_87ec82fd16bc4741: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/qiime2_filtersamples.nf
+  Script_810a971f4dfff0ad: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/nf-core/pigz/uncompress/main.nf
+  Script_04cb707c92307a81: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/nf-core/fasta_hmmsearch_rank_fastas/../../../modules/nf-core/hmmer/hmmrank/main.nf
+  Script_c94371083191cfbf: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../modules/local/summary_report.nf
+  Script_52e7459e43e3c947: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../modules/local/dada2_err.nf
+  Script_d297416776be989e: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/qiime2_diversity_alpha.nf
+  Script_b173a66751a4fecb: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/qiime2_ancombc_asv.nf
+  Script_3b4bf68fd22a9eaf: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/qiime2_inasv.nf
+  Script_2eda619f1b6b78f7: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/nf-core/fasta_newick_epang_gappa/../../../modules/nf-core/gappa/examineheattree/main.nf
+  Script_2937ad110d7fa6dc: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/qiime2_alphararefaction.nf
+  Script_256a109a311abd53: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/../../modules/local/sidle_tablerecon.nf
+  Script_a5fb8670e550bd8e: /crex/proj/snic2020-16-76/nobackup/projects/Danilo/dev/ampliseq/./workflows/../subworkflows/local/qiime2_ancom.nf
+Oct-30 10:48:39.509 [main] DEBUG nextflow.Session - Session aborted -- Cause: Missing input declaration: One of `--input`, `--input_fasta`, `--input_folder` is required.
+Oct-30 10:48:39.534 [main] DEBUG nextflow.Session - The following nodes are still active:
+  [operator] map
+
+Oct-30 10:48:39.544 [main] ERROR nextflow.cli.Launcher - @unknown
+nextflow.exception.WorkflowScriptErrorException: Missing input declaration: One of `--input`, `--input_fasta`, `--input_folder` is required.
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.Nextflow.error(Nextflow.groovy:226)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at Script_094ba5b310a8fedf.validateInputParameters(Script_094ba5b310a8fedf:147)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at nextflow.script.FunctionDef.invoke_a(FunctionDef.groovy:64)
+	at nextflow.script.ComponentDef.invoke_o(ComponentDef.groovy:40)
+	at nextflow.script.WorkflowBinding.invokeMethod(WorkflowBinding.groovy:103)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:651)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:628)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeOnDelegationObjects(ClosureMetaClass.java:391)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:330)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at Script_094ba5b310a8fedf$_runScript_closure6$_closure8.doCall(Script_094ba5b310a8fedf:68)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:279)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at groovy.lang.Closure.call(Closure.java:433)
+	at groovy.lang.Closure.call(Closure.java:412)
+	at nextflow.script.WorkflowDef.run0(WorkflowDef.groovy:204)
+	at nextflow.script.WorkflowDef.run(WorkflowDef.groovy:188)
+	at nextflow.script.BindableDef.invoke_a(BindableDef.groovy:51)
+	at nextflow.script.ComponentDef.invoke_o(ComponentDef.groovy:40)
+	at nextflow.script.WorkflowBinding.invokeMethod(WorkflowBinding.groovy:103)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:651)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:628)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeOnDelegationObjects(ClosureMetaClass.java:391)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:330)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at Script_a8d8dd8dd41d074f$_runScript_closure2$_closure4.doCall(Script_a8d8dd8dd41d074f:55)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:279)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at groovy.lang.Closure.call(Closure.java:433)
+	at groovy.lang.Closure.call(Closure.java:412)
+	at nextflow.script.WorkflowDef.run0(WorkflowDef.groovy:204)
+	at nextflow.script.WorkflowDef.run(WorkflowDef.groovy:188)
+	at nextflow.script.BindableDef.invoke_a(BindableDef.groovy:51)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.script.BaseScript.run0(BaseScript.groovy:198)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.script.BaseScript.run(BaseScript.groovy:209)
+	at nextflow.script.ScriptParser.runScript(ScriptParser.groovy:236)
+	at nextflow.script.ScriptRunner.run(ScriptRunner.groovy:243)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:138)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:372)
+	at nextflow.cli.Launcher.run(Launcher.groovy:503)
+	at nextflow.cli.Launcher.main(Launcher.groovy:657)
