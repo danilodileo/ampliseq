@@ -248,6 +248,27 @@ Special features of taxonomic classification tools:
 
 Parameter guidance is given in [nf-core/ampliseq website parameter documentation](https://nf-co.re/ampliseq/parameters/#taxonomic-database). Citations are listed in [`CITATIONS.md`](CITATIONS.md).
 
+#### Phylogenetic placement
+
+Phylogenetic placement will place ASV sequences in a reference tree. There are two ways of specifying the information for phylogenetic placement:
+
+1. To use a _single_ reference tree for all ASVs, use the parameters `--pplace_tree`, `--pplace_aln`, `--pplace_model` and `--pplace_taxonomy` to specify the `newick` tree file, the alignment, phylogenetic model and taxonomy for the reference tree respectively.
+
+2. If you want to use different reference trees for different taxonomic groups of ASV sequences, you can provide a `csv` file via the `--pplace_phylosearch` parameter with the following content:
+
+|--------|-------------|---------|-------------|------------|--------------|-----------|------------------|
+| id     | alignmethod | hmm     | extract_hmm | refseqfile | refphylogeny | model     | taxonomy         |
+|--------|-------------|---------|-------------|------------|--------------|-----------|------------------|
+| arc16s | hmmer       | arc.hmm | arc_16S     | arc.alnfna | arc.newick   | GTR+F+I+G | arc.taxonomy.tsv |
+| bac16s | hmmer       | bac.hmm | bac_16S     | bac.alnfna | bac.newick   | GTR+F+I+G | bac.taxonomy.tsv |
+| euk16s | hmmer       | euk.hmm | euk_16S     |            |              |           |                  |
+|--------|-------------|---------|-------------|------------|--------------|-----------|------------------|
+
+The ASV sequences will be matched to the hmm profiles and passed to phylogenetic placement for the hmm it matches best.
+Entries in the table for which there are no reference tree information provided, can be used to attract ASV sequences for taxa for which
+no reference phylogeny exists, i.e. as a "lure" to avoid placing non-target ASVs in non-fitting trees.
+`extract_hmm` is mandatory if `hmm` specifies a multi-hmm, i.e. an hmm file that contains more than one hmm model.
+
 ### Multiple region analysis with Sidle
 
 Instead of relying on one short amplicon, scaffolding multiple regions along a reference can improve resolution over a single region. This method applies [Sidle (SMURF Implementation Done to acceLerate Efficiency)](https://github.com/jwdebelius/q2-sidle) within [QIIME2](https://qiime2.org/) with [Silva](https://www.arb-silva.de/) (see [licence](https://www.arb-silva.de/silva-license-information/)) or [Greengenes](http://greengenes.microbio.me/greengenes_release/) database.
